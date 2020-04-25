@@ -18,7 +18,9 @@
 #define PID_D 0.0
 #define PID_REFRESH_RATE 100 //Refresh time between two PID.compute in millisecond
 #define R 0.1245 //0.125m
-#define r 0.029
+#define r1 0.029
+#define r2 0.029
+#define r3 0.029
 #define sinpi3 0.86602
 #define sqrt3  1.73205
 
@@ -53,9 +55,9 @@ PID pid3(&measuredSpeed[2], &PIDSpeed[2], &motorSpeed[2], PID_P, PID_I, PID_D, D
 
 void message_callback( const geometry_msgs::Twist& twist_msg) {
 
-  motorSpeed[0] = (-twist_msg.linear.x + R * twist_msg.angular.z) / r;
-  motorSpeed[1] = (-sinpi3 * twist_msg.linear.y - 0.5 *  (-twist_msg.linear.x) + R * twist_msg.angular.z) / r;
-  motorSpeed[2] = (sinpi3 * twist_msg.linear.y - 0.5 * (-twist_msg.linear.x) + R * twist_msg.angular.z) / r;
+  motorSpeed[0] = (-twist_msg.linear.x + R * twist_msg.angular.z) / r1;
+  motorSpeed[1] = (-sinpi3 * twist_msg.linear.y - 0.5 *  (-twist_msg.linear.x) + R * twist_msg.angular.z) / r2;
+  motorSpeed[2] = (sinpi3 * twist_msg.linear.y - 0.5 * (-twist_msg.linear.x) + R * twist_msg.angular.z) / r3;
 
   pid1.Compute();
   if (PIDSpeed[0] < IDLE_THRESHOLD && motorSpeed[0] == 0) {
@@ -228,6 +230,8 @@ void loop() {
   odometry_msg.pose.pose.position.x = position[0];
   odometry_msg.pose.pose.position.y = position[1];
   odometry_msg.pose.pose.orientation.w = position[2];
+
+  
   chatter.publish( &odometry_msg );
   /*
     odom_trans.header.stamp = newTime;
