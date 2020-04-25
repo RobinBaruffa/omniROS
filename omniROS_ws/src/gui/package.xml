@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>gui</name>
+    <version>0.0.0</version>
+    <description>The gui package</description>
+    <license>GPLv3</license>
+    <author email="robin.baruffa@gmail.com">Robin BARUFFA</author>
+    <maintainer email="robin.baruffa@gmail.com">omniROS</maintainer>
+
+    <buildtool_depend>catkin</buildtool_depend>
+    <depend>rospy</depend>
+    <depend>std_msgs</depend>
+    <exec_depend>message_runtime</exec_depend>
+</package>

@@ -1,0 +1,52 @@
+Find Raspberry : 
+arp -a | grep b8:27:eb | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+
+change MAC ADDRESS
+sudo macchanger -r enp5s0f1
+original MAC Address : 40:e2:30:76:d6:23 for wlp4s0
+start vnc server on raspberry:
+vncserver
+kill vnc server on raspberry:
+vncserver -kill :1
+Vnc client app : remmina 
+
+send folder to raspberry
+scp -r /home/user/omniROS ubuntu@10.42.0.1:/home/ubuntu/omniROS_ws
+
+
+on computer
+export ROS_MASTER_URI=http://10.42.0.1:11311 && export ROS_IP=10.42.0.224
+
+export ROS_MASTER_URI=http://192.168.1.30:11311 && export ROS_IP=192.168.1.36
+
+on raspberry (
+ssh ubuntu@10.42.0.1
+mdp toor  )
+ssh pi@RaspberryPI
+
+rosrun gmapping slam_gmapping scan:=base_scan
+
+Static name for usb device : http://hintshop.ludvig.co.nz/show/persistent-names-usb-serial-devices/
+
+process list : htop
+
+Recalibrate time 
+sudo ntpdate -qu 1.ro.pool.ntp.org
+Proper way to do it http://wiki.ros.org/ROS/NetworkSetup
+
+roslaunch launch omniROSSimu.launch control:=joystick
+roslaunch launch omniROSClient.launch control:=joystick slam:=yes
+
+Multiplot ROS package :
+
+rosrun rqt_multiplot rqt_multiplot
+rosrun plotjuggler PlotJuggler 
+
+
+To visualize the real time update rate -> gz stats
+
+Send folder to IBM server
+scp -i ~/.ssh/IBM_cloud_private -r /home/user/omniROS root@159.8.113.150:/root/omniROS_ws
+connect SSH IBM server
+
+ssh -i ~/.ssh/IBM_cloud_private root@159.8.113.150

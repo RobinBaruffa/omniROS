@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/user/omniROS/lidar_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_85c32/fast"
+/usr/bin/make -f CMakeFiles/cmTC_85c32.dir/build.make CMakeFiles/cmTC_85c32.dir/build
+make[1]: Entering directory '/home/user/omniROS/lidar_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_85c32.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_85c32.dir/CheckSymbolExists.c.o   -c /home/user/omniROS/lidar_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_85c32
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85c32.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_85c32.dir/CheckSymbolExists.c.o  -o cmTC_85c32 -rdynamic 
+CMakeFiles/cmTC_85c32.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_85c32.dir/build.make:97: recipe for target 'cmTC_85c32' failed
+make[1]: *** [cmTC_85c32] Error 1
+make[1]: Leaving directory '/home/user/omniROS/lidar_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_85c32/fast' failed
+make: *** [cmTC_85c32/fast] Error 2
+
+File /home/user/omniROS/lidar_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/user/omniROS/lidar_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2ad26/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2ad26.dir/build.make CMakeFiles/cmTC_2ad26.dir/build
+make[1]: Entering directory '/home/user/omniROS/lidar_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ad26.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2ad26.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2ad26
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ad26.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_2ad26.dir/CheckFunctionExists.c.o  -o cmTC_2ad26 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2ad26.dir/build.make:97: recipe for target 'cmTC_2ad26' failed
+make[1]: *** [cmTC_2ad26] Error 1
+make[1]: Leaving directory '/home/user/omniROS/lidar_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2ad26/fast' failed
+make: *** [cmTC_2ad26/fast] Error 2
+
+

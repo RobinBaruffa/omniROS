@@ -1,0 +1,2 @@
+ydlidar-master
+-DCATKIN_DEVEL_PREFIX=/home/user/omniROS/lidar_ws/devel -DCMAKE_INSTALL_PREFIX=/home/user/omniROS/lidar_ws/install -G Unix Makefiles

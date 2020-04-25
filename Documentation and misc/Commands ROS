@@ -1,0 +1,11 @@
+cd ~/Bureau/lidar/ydlidar_ws && catkin_make
+
+cd ~/Bureau/lidar/ydlidar_ws/src/ydlidar/launch/ && roslaunch ydlidar lidar.launch
+
+cd ~/Bureau/lidar/ydlidar_ws/src/ydlidar/src/ && rosrun ydlidar ydlidar_client
+
+scp -r lidar_ws/ ubuntu@ubiquityrobot.local:
+
+nano .bash_history
+echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc

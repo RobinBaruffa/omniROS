@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+ <tabbed_widget name="Main Window" parent="main_window">
+  <plotmatrix columns="1" tab_name="plot" rows="3">
+   <plot row="0" col="0">
+    <range bottom="-0.116389" top="0.147756" right="77.334000" left="71.332000"/>
+    <limitY/>
+    <curve B="255" custom_transform="noTransform" G="0" R="255" name="/omniROS/vel_w/x"/>
+    <curve B="255" custom_transform="noTransform" G="0" R="255" name="/omniROS/vel_w_measured/x"/>
+    <transform value="noTransform"/>
+   </plot>
+   <plot row="1" col="0">
+    <range bottom="-0.007334" top="0.043535" right="77.334000" left="71.332000"/>
+    <limitY/>
+    <curve B="128" custom_transform="noTransform" G="0" R="0" name="/omniROS/vel_w/y"/>
+    <curve B="128" custom_transform="noTransform" G="0" R="0" name="/omniROS/vel_w_measured/y"/>
+    <transform value="noTransform"/>
+   </plot>
+   <plot row="2" col="0">
+    <range bottom="-0.030235" top="0.072059" right="77.334000" left="71.332000"/>
+    <limitY/>
+    <curve B="128" custom_transform="noTransform" G="128" R="0" name="/omniROS/vel_w/z"/>
+    <curve B="128" custom_transform="noTransform" G="128" R="0" name="/omniROS/vel_w_measured/z"/>
+    <transform value="noTransform"/>
+   </plot>
+  </plotmatrix>
+  <currentPlotMatrix index="0"/>
+ </tabbed_widget>
+ <use_relative_time_offset enabled="1"/>
+ <Plugins>
+  <DataLoad_CSV>
+   <default time_axis=""/>
+  </DataLoad_CSV>
+  <DataLoad_ROS_bags>
+   <selected_topics list=""/>
+  </DataLoad_ROS_bags>
+  <DataLoad_ULog>
+   <no_params/>
+  </DataLoad_ULog>
+  <ROS_Topic_Streamer>
+   <selected_topics list="/omniROS/vel_w;/omniROS/vel_w_measured"/>
+  </ROS_Topic_Streamer>
+  <RosoutPublisherROS/>
+  <TopicPublisherROS/>
+ </Plugins>
+ <previouslyLoadedStreamer name="ROS_Topic_Streamer"/>
+ <customMathEquations/>
+ <snippets>
+  <snippet name="1st_derivative">
+   <global>var prevX = 0
+var prevY = 0</global>
+   <equation>dx = time - prevX
+dy = value - prevY
+prevX = time
+prevY = value
+
+return dy/dx</equation>
+  </snippet>
+  <snippet name="1st_order_lowpass">
+   <global>var prevY = 0
+var alpha = 0.1</global>
+   <equation>prevY = alpha * value + (1.-alpha) * prevY
+
+return prevY</equation>
+  </snippet>
+  <snippet name="sum_A_B">
+   <global></global>
+   <equation>return $$PLOT_A$$ + $$PLOT_B$$</equation>
+  </snippet>
+  <snippet name="yaw_from_quaternion">
+   <global>// source: https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles
+
+function quaternionToYaw(x, y, z, w)
+{
+  // yaw (z-axis rotation)
+  t1 = 2.0 * (w * z + x * y);
+  t2 = 1.0 - 2.0 * (y * y + z * z);
+  yaw = Math.atan2(t1, t2);
+
+  return yaw
+}</global>
+   <equation>return quaternionToYaw(x, y, z, w);</equation>
+  </snippet>
+ </snippets>
+</root>
+

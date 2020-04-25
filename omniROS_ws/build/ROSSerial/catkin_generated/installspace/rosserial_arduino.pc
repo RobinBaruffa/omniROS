@@ -1,0 +1,8 @@
+prefix=/home/user/omniROS/omniROS_ws/install
+
+Name: rosserial_arduino
+Description: Description of rosserial_arduino
+Version: 0.8.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

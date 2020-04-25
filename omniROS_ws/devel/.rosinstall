@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/user/omniROS/omniROS_ws/devel/setup.sh

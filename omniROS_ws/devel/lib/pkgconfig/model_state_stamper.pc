@@ -1,0 +1,8 @@
+prefix=/home/user/omniROS/omniROS_ws/devel
+
+Name: model_state_stamper
+Description: Description of model_state_stamper
+Version: 0.0.0
+Cflags: -I/home/user/omniROS/omniROS_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

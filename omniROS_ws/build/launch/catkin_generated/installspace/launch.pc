@@ -1,0 +1,8 @@
+prefix=/home/user/omniROS/omniROS_ws/install
+
+Name: launch
+Description: Description of launch
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

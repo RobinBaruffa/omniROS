@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <arg name="control" default="gui"/>
+  <node name ="gui_node" pkg="gui" type="gui_node.py" if="$(eval control == 'gui')"/>
+  <node name ="joystick_node" pkg="rosserial_python" type="serial_node.py" args="tcp" if="$(eval control == 'joystick')"/>
+  <node name ="wcomputation_node" pkg="wcomputation" type="wcomputation_node.py"/>
+  <node name ="total_torque_node" pkg="total_torque" type="total_torque"/>
+  <node name ="model_state_stamper_node" pkg="model_state_stamper" type="model_state_stamper"/>
+  <node name ="fitness_node" pkg="fitness" type="fitness"/>
+  <node name="simulation_node" pkg="simulation" type="simulation" if="$(eval control == 'ddpg')"/>
+  <node name="ddpg_node" pkg="ddpg" type="shellCommandDDPG.sh" if="$(eval control == 'ddpg')"/>
+
+  <include file="/opt/ros/kinetic/share/gazebo_ros/launch/empty_world.launch">
+     <arg name="world_name" value="worlds/omniROS.world"/>
+     <arg name="paused" value="false"/>
+     <arg name="verbose" value="true"/>
+     <arg name="gui" value="true"/>
+<!-- To visualize the real time update rate -> gz stats -->
+  </include>
+</launch>

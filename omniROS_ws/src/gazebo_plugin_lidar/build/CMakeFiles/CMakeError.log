@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/user/omniROS/omniROS_ws/src/gazebo_plugin_lidar/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dfb73/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dfb73.dir/build.make CMakeFiles/cmTC_dfb73.dir/build
+make[1]: Entering directory '/home/user/omniROS/omniROS_ws/src/gazebo_plugin_lidar/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dfb73.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_dfb73.dir/CheckSymbolExists.c.o   -c /home/user/omniROS/omniROS_ws/src/gazebo_plugin_lidar/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_dfb73
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dfb73.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_dfb73.dir/CheckSymbolExists.c.o  -o cmTC_dfb73 -rdynamic 
+CMakeFiles/cmTC_dfb73.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_dfb73.dir/build.make:97: recipe for target 'cmTC_dfb73' failed
+make[1]: *** [cmTC_dfb73] Error 1
+make[1]: Leaving directory '/home/user/omniROS/omniROS_ws/src/gazebo_plugin_lidar/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_dfb73/fast' failed
+make: *** [cmTC_dfb73/fast] Error 2
+
+File /home/user/omniROS/omniROS_ws/src/gazebo_plugin_lidar/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/user/omniROS/omniROS_ws/src/gazebo_plugin_lidar/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a154d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a154d.dir/build.make CMakeFiles/cmTC_a154d.dir/build
+make[1]: Entering directory '/home/user/omniROS/omniROS_ws/src/gazebo_plugin_lidar/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a154d.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a154d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a154d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a154d.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_a154d.dir/CheckFunctionExists.c.o  -o cmTC_a154d -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a154d.dir/build.make:97: recipe for target 'cmTC_a154d' failed
+make[1]: *** [cmTC_a154d] Error 1
+make[1]: Leaving directory '/home/user/omniROS/omniROS_ws/src/gazebo_plugin_lidar/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a154d/fast' failed
+make: *** [cmTC_a154d/fast] Error 2
+
+

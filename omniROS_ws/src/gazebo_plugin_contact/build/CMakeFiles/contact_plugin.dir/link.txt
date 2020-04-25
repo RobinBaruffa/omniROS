@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -std=c++11  -shared -Wl,-soname,libcontact_plugin.so -o libcontact_plugin.so CMakeFiles/contact_plugin.dir/contact_plugin.cc.o  -L/usr/lib/x86_64-linux-gnu/gazebo-7/plugins 

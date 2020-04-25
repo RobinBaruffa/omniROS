@@ -1,0 +1,85 @@
+[0m[ INFO] [1539884520.617266891]: Finished loading Gazebo ROS API Plugin.[0m
+[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[0m[ INFO] [1539884520.618373590]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.0.27[0m[1;32m
+[0m[1;32m[0m[0m[ INFO] [1539884520.651251166]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[ INFO] [1539884520.651692557]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.0.27[0m[1;32m
+[0m[1;32m[0m[0m[ INFO] [1539884523.264427918, 0.022000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[ INFO] [1539884523.343439664, 0.101000000]: Physics dynamic reconfigure ready.[0m
+[0m[ INFO] [1539884523.267090867, 0.025000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[ INFO] [1539884523.343969114, 0.102000000]: Physics dynamic reconfigure ready.[0m
+[1;36m[0m[1;32m[0m... logging to /home/user/.ros/log/1d694786-d2fd-11e8-ab49-40e23076d623/roslaunch-user-G551JM-7807.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/user/omniROS/omniROS_ws/src/omniROS_gazebo/launch/omniROS.launch
+[1mstarted roslaunch server http://user-G551JM:38575/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.13
+ * /use_sim_time: True
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    gazebo_gui (gazebo_ros/gzclient)
+    gui_node (gui/gui_node.py)
+    wcomputation_node (wcomputation/wcomputation_node.py)
+
+auto-starting new master
+[1mprocess[master]: started with pid [7818][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/user/omniROS/omniROS_ws/src/omniROS_gazebo/launch/omniROS.launch http://localhost:11311
+[1msetting /run_id to 1d694786-d2fd-11e8-ab49-40e23076d623[0m
+[1mprocess[rosout-1]: started with pid [7831][0m
+started core service [/rosout]
+[1mprocess[gui_node-2]: started with pid [7835][0m
+[1mprocess[wcomputation_node-3]: started with pid [7846][0m
+[1mprocess[gazebo-4]: started with pid [7857][0m
+[1mprocess[gazebo_gui-5]: started with pid [7862][0m
+[1m[gui_node-2] process has finished cleanly
+log file: /home/user/.ros/log/1d694786-d2fd-11e8-ab49-40e23076d623/gui_node-2*.log[0m
+[gazebo_gui-5] killing on exit
+[gazebo-4] killing on exit
+[wcomputation_node-3] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+... logging to /home/user/.ros/log/6c8431b4-d2fd-11e8-ab49-40e23076d623/roslaunch-user-G551JM-8643.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/user/omniROS/omniROS_ws/src/omniROS_gazebo/launch/omniROS.launch
+[1mstarted roslaunch server http://user-G551JM:46695/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.13
+ * /use_sim_time: True
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    gazebo_gui (gazebo_ros/gzclient)
+    gui_node (gui/gui_node.py)
+    wcomputation_node (wcomputation/wcomputation_node.py)
+
+auto-starting new master
+[1mprocess[master]: started with pid [8653][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/user/omniROS/omniROS_ws/src/omniROS_gazebo/launch/omniROS.launch http://localhost:11311
+[1msetting /run_id to 6c8431b4-d2fd-11e8-ab49-40e23076d623[0m
+[master] killing on exit

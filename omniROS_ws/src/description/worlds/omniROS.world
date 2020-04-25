@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <plugin name="simulation_plugin" filename="libsimulation_plugin.so"/>
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <!-- Default is 0.001 , can go up to increase the simulation real time update rate  -->
+      <real_time_factor>1.000000</real_time_factor>
+      <real_time_update_rate>1000.000000</real_time_update_rate>
+      <!-- Default is 1000 , can go up to increase the simulation real time update rate  -->
+    </physics>
+  <!-- <plugin name="simulation_plugin" filename="libsimulation_plugin.so"/> -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://omniROS</uri>
+      <plugin name="torque_plugin" filename="libtorque_plugin.so"/>
+
+      <pose> 0 0 0.10 0 0 3.1415 </pose>
+    </include>
+    <include>
+      <uri>model://ball</uri>
+      <!-- <plugin name="ball_plugin" filename="libball_plugin.so"/> -->
+      <!-- Useless because of modelstate message in gazebo-->
+      <pose> 1 1 0.05 0 0 0 </pose>
+    </include>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+    <scene>
+      <ambient>1.0 1.0 1.0 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+  </world>
+</sdf>

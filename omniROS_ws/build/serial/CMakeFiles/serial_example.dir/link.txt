@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/serial_example.dir/examples/serial_example.cc.o  -o /home/user/omniROS/omniROS_ws/devel/lib/serial/serial_example -rdynamic /home/user/omniROS/omniROS_ws/devel/lib/libserial.so -lrt -lpthread -Wl,-rpath,/home/user/omniROS/omniROS_ws/devel/lib 

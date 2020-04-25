@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/user/omniROS/lidar_ws/devel/setup.sh

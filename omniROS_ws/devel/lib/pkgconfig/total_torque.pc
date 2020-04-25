@@ -1,0 +1,8 @@
+prefix=/home/user/omniROS/omniROS_ws/devel
+
+Name: total_torque
+Description: Description of total_torque
+Version: 0.0.0
+Cflags: -I/home/user/omniROS/omniROS_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

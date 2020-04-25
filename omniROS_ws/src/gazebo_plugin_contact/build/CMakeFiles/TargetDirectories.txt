@@ -1,0 +1,3 @@
+/home/user/omniROS/omniROS_ws/src/gazebo_plugin_contact/build/CMakeFiles/rebuild_cache.dir
+/home/user/omniROS/omniROS_ws/src/gazebo_plugin_contact/build/CMakeFiles/edit_cache.dir
+/home/user/omniROS/omniROS_ws/src/gazebo_plugin_contact/build/CMakeFiles/contact.dir
