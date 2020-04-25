@@ -1,2 +1,3 @@
 *.html linguist-detectable=false
+*.cmake linguist-detectable=false
 *.py linguist-detectable=true
