@@ -1,8 +1,0 @@
-prefix=/home/user/omniROS/omniROS_ws/devel
-
-Name: serial
-Description: Description of serial
-Version: 1.2.1
-Cflags: -I/home/user/omniROS/omniROS_ws/src/serial/include
-Libs: -L${prefix}/lib -lserial -lrt -lpthread
-Requires: 

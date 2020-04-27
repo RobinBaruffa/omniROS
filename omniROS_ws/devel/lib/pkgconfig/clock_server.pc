@@ -1,8 +1,0 @@
-prefix=/home/user/omniROS/omniROS_ws/devel
-
-Name: clock_server
-Description: Description of clock_server
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

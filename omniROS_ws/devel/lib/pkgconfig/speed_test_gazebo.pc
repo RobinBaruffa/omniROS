@@ -1,8 +1,0 @@
-prefix=/home/user/omniROS/omniROS_ws/devel
-
-Name: speed_test_gazebo
-Description: Description of speed_test_gazebo
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

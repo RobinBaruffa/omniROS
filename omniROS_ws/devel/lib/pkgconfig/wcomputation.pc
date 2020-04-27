@@ -1,8 +1,0 @@
-prefix=/home/user/omniROS/omniROS_ws/devel
-
-Name: wcomputation
-Description: Description of wcomputation
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

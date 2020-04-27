@@ -1,8 +1,0 @@
-prefix=/home/user/omniROS/omniROS_ws/devel
-
-Name: description
-Description: Description of description
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

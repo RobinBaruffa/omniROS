@@ -1,0 +1,5 @@
+###############################		TODO		#########################################################
+Finish and test the Arduino esp8266_wheel_radius_calibration sketch
+Make the optimization algorithm on Matlab compatible with rosbag and with visualization
+Gather enough odometry data with rosbag (at least 3 different paths with different waypoints, 8 runs per path)
+Update the values in the ESP8266 and make a sanity check, confirm accuracy with gmapping and LIDAR

@@ -1,8 +1,0 @@
-prefix=/home/user/omniROS/omniROS_ws/install
-
-Name: rosserial_python
-Description: Description of rosserial_python
-Version: 0.8.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

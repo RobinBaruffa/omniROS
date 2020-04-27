@@ -1,2 +1,0 @@
-ROSSerial:clock_server:ddpg:description:fitness:gui:launch:model_state_stamper:odometry_computation:odometry_stamper:rosserial_msgs:rosserial_python:serial:simulation:speed_test_gazebo:total_torque:wcomputation:ydlidar-master
--DCATKIN_DEVEL_PREFIX=/home/user/omniROS/omniROS_ws/devel -DCMAKE_INSTALL_PREFIX=/home/user/omniROS/omniROS_ws/install -G Unix Makefiles

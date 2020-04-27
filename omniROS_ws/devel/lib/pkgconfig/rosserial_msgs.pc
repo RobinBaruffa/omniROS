@@ -1,8 +1,0 @@
-prefix=/home/user/omniROS/omniROS_ws/devel
-
-Name: rosserial_msgs
-Description: Description of rosserial_msgs
-Version: 0.8.0
-Cflags: -I/home/user/omniROS/omniROS_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime
