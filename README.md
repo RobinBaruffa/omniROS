@@ -34,5 +34,8 @@ An algorithm manages the whole simulation by spawning a simulated ball at a rand
 
 # Video pitch of a potential consumer product based on the project
 While attending an entrepreneurship course at UTBM (Université de Technologie de Belfort-Montbéliard), I edited a video explaining how a commercial product could be derived from this project.
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/R22B-GZS-08/0.jpg)](http://www.youtube.com/watch?v=R22B-GZS-08 "omniROS omniwheel robotic development platform for AI
-")
+
+
+
+![image alt text](http://img.youtube.com/vi/R22B-GZS-08/0.jpg)]
+(http://www.youtube.com/watch?v=R22B-GZS-08 "omniROS omniwheel robotic development platform for AI")
