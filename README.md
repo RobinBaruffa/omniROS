@@ -32,3 +32,7 @@ At all steps of the development, I have checked as much as possible that the rob
 Reinforcement Learning (RL) algorithm are at the heart of recent innovation in autonomous vehicle and AI improvement. They are used in a large variety of fields (Google DeepMind, OpenAI, AlphaGO). I use an algorithm called DDPG (Deep Deterministic Policy Gradients) created by Google DeepMind laboratory, and my goal here is to teach the robot how to throw back a ball without giving it any prior knowledge about how it should be done. This algorithm gets as an input a 360 dimensions vector representing the distance between the robot and an object each degree of rotation, and outputs a 3 dimension vector responsible for the two velocity in translation and the velocity in rotation. 
 An algorithm manages the whole simulation by spawning a simulated ball at a random distance from the robot, and then strike it roughly in its direction with a random velocity. A fitness function evalutates the RL algorithm performance and is used to find an optimal policy
 
+# Video pitch of a potential consumer product based on the project
+While attending an entrepreneurship course at UTBM (Université de Technologie de Belfort-Montbéliard), I edited a video explaining how a commercial product could be derived from this project.
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/R22B-GZS-08/0.jpg)](http://www.youtube.com/watch?v=R22B-GZS-08 "omniROS omniwheel robotic development platform for AI
+")
