@@ -36,5 +36,8 @@ An algorithm manages the whole simulation by spawning a simulated ball at a rand
 While attending an entrepreneurship course at UTBM (Université de Technologie de Belfort-Montbéliard), I edited a video explaining how a commercial product could be derived from this project.
 
 
+<iframe width="690" height="388" src="https://www.youtube.com/embed/R22B-GZS-08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![omniROS pitch](https://raw.githubusercontent.com/RobinBaruffa/omniROS/master/Documentation%20and%20misc/omniROSYTthumbnail.png)] (http://www.youtube.com/watch?v=R22B-GZS-08 "omniROS omniwheel robotic development platform for AI")
+
+
+![omniROS pitch](https://raw.githubusercontent.com/RobinBaruffa/omniROS/master/Documentation%20and%20misc/omniROSYTthumbnail.png)](http://www.youtube.com/watch?v=R22B-GZS-08 "omniROS omniwheel robotic development platform for AI")
