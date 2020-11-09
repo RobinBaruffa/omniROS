@@ -37,4 +37,4 @@ While attending an entrepreneurship course at UTBM (Université de Technologie d
 
 
 
-![image alt text](http://img.youtube.com/vi/R22B-GZS-08/0.jpg)](http://www.youtube.com/watch?v=R22B-GZS-08 "omniROS omniwheel robotic development platform for AI")
+![omniROS pitch](https://raw.githubusercontent.com/RobinBaruffa/omniROS/master/Documentation%20and%20misc/omniROSYTthumbnail.png)] (http://www.youtube.com/watch?v=R22B-GZS-08 "omniROS omniwheel robotic development platform for AI")
